@@ -1,5 +1,9 @@
 class Bag
   def empty?
-    true 
+    true
+  end
+
+  def count
+    0
   end
 end
