@@ -1,3 +1,5 @@
 class Bag
-
-end 
+  def empty?
+    true 
+  end
+end
