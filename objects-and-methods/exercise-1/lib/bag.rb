@@ -6,4 +6,8 @@ class Bag
   def count
     0
   end
+
+  def candies
+    []
+  end
 end
