@@ -31,7 +31,6 @@ class BagTest < Minitest::Test
   end
 
   def test_bag_counts_candies
-    skip
     bag = Bag.new
     bag << Candy.new("Caramelized Almonds")
     assert_equal 1, bag.count
