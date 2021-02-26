@@ -18,7 +18,6 @@ class BagTest < Minitest::Test
   end
 
   def test_put_candy_in_the_bag
-    skip
     bag = Bag.new
     candy = Candy.new("Sour frogs")
     bag << candy
