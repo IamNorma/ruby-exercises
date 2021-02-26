@@ -25,7 +25,6 @@ class BagTest < Minitest::Test
   end
 
   def test_a_bag_with_candies_is_not_empty
-    skip
     bag = Bag.new
     bag << Candy.new("Nerds")
     assert_equal false, bag.empty?
