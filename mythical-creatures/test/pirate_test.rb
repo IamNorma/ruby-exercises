@@ -48,10 +48,14 @@ class PirateTest < Minitest::Test
   end
 
   def test_a_pirate_gets_100_booty_for_robbing_ships
-    skip
     # create a pirate
     # rob some ships
     # check that the pirate got 100 booty for each ship it robbed
+    pirate = Pirate.new("Jack")
+    5.times do
+      pirate.rob
+    end
+    assert_equal 500, pirate.booty
   end
 
 end
