@@ -17,4 +17,8 @@ class Pirate
     @count += 1
     @cursed = false if @count >= 3
   end
+
+  def rob
+    @booty += 100 
+  end
 end
