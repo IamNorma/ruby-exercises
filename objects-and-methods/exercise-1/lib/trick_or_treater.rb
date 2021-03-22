@@ -13,4 +13,8 @@ class TrickOrTreater
   def candy_count
     @bag.size
   end
+
+  def eat
+    @bag.pop
+  end
 end
