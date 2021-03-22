@@ -42,7 +42,6 @@ class HobbitTest < Minitest::Test
   end
 
   def test_comes_of_age_at_33
-    skip
     hobbit = Hobbit.new('Otho')
     33.times do
       hobbit.celebrate_birthday
@@ -55,10 +54,14 @@ class HobbitTest < Minitest::Test
   end
 
   def test_is_old_at_age_of_101
-    skip
     # create a hobbit
     # have hobbit age 101 years
     # check that hobbit.old? returns true
+    hobbit = Hobbit.new('Frodo')
+    101.times do
+      hobbit.celebrate_birthday
+    end
+    assert_equal true, hobbit.old?
   end
 
   def test_hobbit_has_the_ring_if_its_name_is_frodo
