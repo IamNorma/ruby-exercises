@@ -10,10 +10,16 @@ class Bag
   end
 
   def count
-    @candies.count 
+    @candies.count
   end
 
   def <<(candy)
     @candies << candy
+  end
+
+  def contains?(candy)
+    @candies.any? do |yummy_candy|
+      yummy_candy.type == candy
+    end
   end
 end
