@@ -20,13 +20,11 @@ class PirateTest < Minitest::Test
   end
 
   def test_in_not_always_a_scallywag
-    skip
     pirate = Pirate.new("Jack", "Cook")
     assert_equal "Cook", pirate.job
   end
 
   def test_isnt_cursed_by_default
-    skip
     pirate = Pirate.new("Jack")
     assert_equal true, pirate.cursed?
   end

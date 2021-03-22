@@ -4,5 +4,10 @@ class Pirate
   def initialize(name, job = 'Scallywag')
     @name = name
     @job = job
+    @cursed = true
+  end
+
+  def cursed?
+    @cursed
   end
 end
