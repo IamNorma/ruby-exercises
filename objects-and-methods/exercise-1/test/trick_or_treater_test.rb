@@ -25,7 +25,6 @@ class TrickOrTreaterTest < Minitest::Test
   end
 
   def test_an_empty_bag_means_no_candy
-    skip
     trick_or_treater = TrickOrTreater.new(Costume.new("Knight"))
     assert_equal false, trick_or_treater.has_candy?
   end
