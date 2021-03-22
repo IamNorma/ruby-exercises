@@ -18,4 +18,8 @@ class Hobbit
   def old?
     @age >= 101
   end
+
+  def has_ring?
+    self.name == 'Frodo'
+  end
 end
