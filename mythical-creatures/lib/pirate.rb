@@ -1,11 +1,12 @@
 class Pirate
-  attr_reader :name, :job
+  attr_reader :name, :job, :booty
 
   def initialize(name, job = 'Scallywag')
     @name = name
     @job = job
     @cursed = true
     @count = 0
+    @booty = 0
   end
 
   def cursed?
