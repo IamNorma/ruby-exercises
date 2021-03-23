@@ -4,6 +4,7 @@ class Wizard
   def initialize(name, bearded: true)
     @name = name
     @bearded = bearded
+    @count = 0
   end
 
   def bearded?
@@ -15,10 +16,11 @@ class Wizard
   end
 
   def rested?
-    true
+    @count < 3
   end
 
   def cast
+    @count += 1
     "MAGIC MISSILE!"
   end
 end
