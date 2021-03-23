@@ -42,9 +42,10 @@ class WizardTest < Minitest::Test
   end
 
   def test_can_cast_spells
-    skip
     # create wizard
     # .cast returns "MAGIC MISSILE!"
+    wizard = Wizard.new("Rob", bearded: false)
+    assert_equal "MAGIC MISSILE!", wizard.cast
   end
 
   def test_gets_tired_after_casting_three_spells
