@@ -17,4 +17,8 @@ class Wizard
   def rested?
     true
   end
+
+  def cast
+    "MAGIC MISSILE!"
+  end
 end
