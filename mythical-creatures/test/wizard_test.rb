@@ -10,13 +10,11 @@ class WizardTest < Minitest::Test
   end
 
   def test_can_have_different_name
-    skip
     wizard = Wizard.new("Alex")
     assert_equal "Alex", wizard.name
   end
 
   def test_is_bearded_by_default
-    skip
     wizard = Wizard.new("Ben")
     assert_equal true, wizard.bearded?
   end
