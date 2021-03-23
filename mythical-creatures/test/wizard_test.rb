@@ -20,7 +20,6 @@ class WizardTest < Minitest::Test
   end
 
   def test_is_not_always_bearded
-    skip
     wizard = Wizard.new("Valerie", bearded: false)
     assert_equal false, wizard.bearded?
   end
