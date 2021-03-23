@@ -6,4 +6,8 @@ class Baby
   def tired?
     @tired
   end
+
+  def nap
+    @tired = false
+  end
 end

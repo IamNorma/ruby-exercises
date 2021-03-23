@@ -10,7 +10,6 @@ class BabyTest < Minitest::Test
   end
 
   def test_not_so_tired_after_a_nap
-    skip
     baby = Baby.new
     baby.nap
     assert_equal false, baby.tired?, "Naps help combat drowsiness."
