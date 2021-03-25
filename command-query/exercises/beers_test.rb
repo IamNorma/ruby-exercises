@@ -10,7 +10,6 @@ class BeersTest < Minitest::Test
   end
 
   def test_inventory_decreases
-    skip
     beers = Beers.new
 
     beers.take_one_down_and_pass_it_around
